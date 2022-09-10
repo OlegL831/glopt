@@ -1,0 +1,90 @@
+.question {
+    background: url(../img/question/background.png) no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &_block {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 18px;
+        background-color: #eee;
+        &_title {
+            background-color: #414141;
+            padding-top: 20px;
+            padding-bottom: 19px;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                text-align: center;
+                color: #fff;
+            }
+        }
+        form {
+            padding-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            width: 78%;
+            margin: auto;
+            
+            input {
+                margin-bottom: 8px;
+                padding: 10px 27px;
+                border-radius: 20px;
+                border: solid 1px rgba(0, 0, 0, 0.21);
+                opacity: 0.7;
+            }
+        }
+        textarea {
+            width: 78%;
+            height: 71px;
+            display: block;
+            margin: auto;
+            margin-bottom: 18px;
+            border: solid 1px rgba(0, 0, 0, 0.21);
+            padding-top: 18px;
+            padding-left: 25px;
+            opacity: 0.5;
+            color: #616467;
+            font-size: 13px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .question {
+        &_block {
+            form {
+                width: 91%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .question {
+        &_block {
+            form {
+                width: 99%;
+                input {
+                    width: 99%;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .question {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &_block {
+            form {
+                display: block;
+                width: 80%;
+            }
+        }
+    }
+}

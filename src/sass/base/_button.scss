@@ -1,0 +1,62 @@
+.btn {
+    font-family: 'Roboto' sans-serif;
+    margin-top: 24px;
+    border-radius: 30px;
+    padding: 17px 20px;
+    background-color: var(--orange);
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    &_button {
+        margin-top: 38px;
+        padding: 22px 46px;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &_catalog {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+        padding: 17px 20px;
+    }
+    &_consultation {
+        margin-bottom: -28px;
+        box-shadow: 0 0 0 20px #fff;
+        padding: 17px 31px;
+    }
+    &_guestion {
+        display: block;
+        padding: 18px 31px;
+        margin: auto;
+    }
+    &_footer {
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn {
+        margin-top: 11px;
+        font-size: 10px;
+        padding: 13px 17px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: 8px;
+        padding: 10px 12px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .btn {
+        &_consultation {
+            position: relative;
+            bottom: 10px;
+        }
+    }
+}

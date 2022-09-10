@@ -1,0 +1,75 @@
+.consultation {
+    padding-top: 55px;
+    padding-bottom: 58px;
+    h2 {
+        text-align: center;
+        padding-bottom: 23px;
+        font-size: 28px;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+    
+    &_forms {
+        margin-top: 71px;
+        border: 1px solid #898989;
+        &_img {
+            display: block;
+            margin: -51px auto;
+            background-color: #fff;
+            box-shadow: 0 0 0 20px #fff;
+
+        }
+        &_form {
+            width: 83%;
+            margin: auto;
+            padding-top: 66px;
+            padding-bottom: 50px;
+            form {
+                input {
+                    padding: 17px 21px;
+                    border-radius: 30px;
+                    width: 33%;
+                    color: #898989;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .consultation {
+        &_forms {
+            &_form {
+                width: 95%;
+                form {
+                    
+                    input{
+                        width: 32%;
+                    }
+                }
+            }
+        }  
+    }
+}
+@media screen and (max-width: 670px) {
+    .consultation {
+        &_forms {
+            &_form {
+                width: 70%;
+                form {
+                    width: 100%;
+                    display: inline-grid;
+                    input {
+                        width: 100%;
+                        padding: 11px 21px;
+                        margin-bottom: 10px;
+                    }
+                    :last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

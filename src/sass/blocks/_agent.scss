@@ -1,0 +1,41 @@
+.agent {
+    padding-top: 59px;
+    padding-bottom: 47px;
+    background: url(../img/agent/baground.png)no-repeat;
+    img {
+        display: block;
+        margin: auto;
+    }
+    h4 {
+        padding-top: 18px;
+        padding-bottom: 24px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    p {
+        margin: auto;
+        width: 87%;
+        text-align: center;
+        font-size: 19px;
+        line-height: 1.7em;
+        font-weight: 300;
+        color: #ffffff;
+    }
+}
+@media screen and (max-width: 991px) {
+    .agent {
+        p {
+           font-size: 17px; 
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .agent {
+        padding-top: 30px;
+        p {
+            font-size: 13px;
+        }
+    } 
+}

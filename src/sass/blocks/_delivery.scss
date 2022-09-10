@@ -1,0 +1,129 @@
+.delivery {
+    padding-top: 58px;
+
+    h2 {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+    }
+    &_title {
+        width: 61%;
+        margin: auto;
+        text-align: center;
+        font-size: 21px;
+        line-height: 1.5em;
+        font-weight: 300;
+        color: #2e2e2e;
+    }
+    &_margin {
+        margin-top: 36px;
+    }
+    &_wrapper {
+        padding-bottom: 27px;
+        background-color: #ffffff;
+        border: 1px solid #e9e9e9;
+    }
+
+    &_catalog {
+        
+        &_head {
+            padding-top: 21px;
+            padding-bottom: 21px;
+            background-color: #25333c;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        &_img {
+            display: block;
+            margin: auto;
+            padding-top: 14px;
+            padding-bottom: 14px;
+
+        }
+        &_title {
+            width: 66%;
+            margin: auto;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            span {
+                padding-top: 6px;
+                font-size: 25px;
+                text-transform: none;
+                color: var(--orange);
+            }
+        }
+        &_active {
+            display: none;
+        }
+        &_subtitle {
+            margin:18px 17px 24px 17px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.3em;
+            font-weight: 300;
+            color: #2e2e2e;
+        }
+    }
+    &_active {
+        display: none;
+        &_block {
+            display: block;
+            padding: 20px 20px 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.6em;
+            font-weight: 300;
+            color: #2e2e2e;
+            &_a {
+                display: block;
+                padding-top: 40px;
+                text-align: center;
+                font-size: 14px;
+                color: var(--orange);
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 1199px) {
+    .delivery {
+        &_catalog {
+            &_title {
+                span {
+                    font-size: 20px;
+                }
+            }
+            &_subtitle {
+                font-size: 12px;
+                margin: 11px 17px 24px 11p
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .delivery {
+        &_title {
+            width: 70%;
+            font-size: 19px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .delivery {
+        h2 {
+            font-size: 19px;
+        }
+        &_title {
+            width: 90%;
+            font-size: 16px;
+        }
+    }
+}

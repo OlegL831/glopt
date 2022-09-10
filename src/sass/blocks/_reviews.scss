@@ -1,0 +1,97 @@
+.reviews {
+    padding-top: 51px;
+    padding-bottom: 61px;
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    &_title {
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    .carusel {
+        padding-top: 31px;
+        width: 53%;
+        margin: auto;
+       &_item {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            img {
+                margin: auto;
+                padding-bottom: 19px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;;
+                line-height: 1.57;
+                text-align: center;
+                color: #3a3a3a;
+            }
+       }
+       .slick-next, .slick-prev {
+            position: absolute;
+            top: 25px;
+            border: none;
+            background-color: #fff;
+       }
+       .slick-next {
+            right: 193px;
+            
+        }
+       .slick-prev {
+            left: 189px;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .reviews .carusel .slick-next {
+        right: 136px;
+    }
+    .reviews .carusel .slick-prev {
+        left: 139px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .reviews .carusel .slick-next {
+        right: 80px;
+    }
+    .reviews .carusel .slick-prev {
+        left: 80px;
+    }
+    .reviews .carusel_item p {
+        font-size: 11px;
+    }
+    .reviews_title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .reviews .carusel .slick-next {
+        right: 0;
+    }
+    .reviews .carusel .slick-prev {
+        left: 0;
+    }
+    .reviews_title {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .reviews .carusel .slick-next {
+        right: -16px;
+    }
+    .reviews .carusel .slick-prev {
+        left: -16px;
+    }
+    .reviews .carusel_item {
+        font-size: 16px;
+    }
+}
